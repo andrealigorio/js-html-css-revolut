@@ -71,17 +71,22 @@ header a {
 }
 .dropdown_menu {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 3px;
     position: absolute;
     top: 30px;
     left: 50%;
     transform: translateX(-50%);
     padding: 0 30px;
+    display: none;
 }
 .dropdown_menu li {
     margin: 30px 0;
 }
-.dropdown_menu#company {
+.dropdown_menu#company{
     width: 180px;
+}
+.dropdown_menu#help, .dropdown_menu#accounts, .dropdown_menu#pricing  {
+    width: 210px;
 }
 .new::after {
     content:'Nuovo';
@@ -90,4 +95,7 @@ header a {
     bottom: 50%;
     font-size: 12px;
     font-weight: bold;
+}
+.active {
+    display: block;
 }
