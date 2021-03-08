@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_left {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav_right {
+    display: flex;
+    align-items: center;
+}
+/* Rendo tutti gli "li" relative per l'eventuale aggiunta di altre classi "new" */
+.nav_right li {
+    position: relative;
+}
+#logo {
+    height: 30%;
+    margin-right: 10px;
+}
+#logo img {
+    height: 100%;
+}
+
+header ul {
+    list-style: none;
+}
+.nav_left li, .nav_right > ul > li {
+    display: inline-block;
+    margin: 0 15px;
+}
+header a {
+    text-decoration: none;
+    color: #b8b8b8;
+}
+.nav_left li:first-child a, header li a:hover {
+    color: black;
+}
+.fa-chevron-down {
+    font-size: 8px;
+    padding: 0 4px;
+}
+.btn {
+    background-color: #eb008d;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+.btn:hover {
+    opacity: 0.8;
+}
+.dropdown {
+    position: relative;
+}
+.dropdown_menu {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 30px;
+}
+.dropdown_menu li {
+    margin: 30px 0;
+}
+.dropdown_menu#company {
+    width: 180px;
+}
+.new::after {
+    content:'Nuovo';
+    color: #eb008d;
+    position: absolute;
+    bottom: 50%;
+    font-size: 12px;
+    font-weight: bold;
+}
